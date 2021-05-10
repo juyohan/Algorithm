@@ -4,33 +4,17 @@ import java.lang.Math;
 
 public class inf_1_12 {
 	public String solution(int index, String text) {
-		List<String> strs = new ArrayList<>();
 		String answer = "";
 
-		for (char c : text.toCharArray()) {
-			if (c == '#')
-				c = '1';
-			else if (c == '*')
-				c = '0';
-			answer += c;
-		}
+		for (int i = 0; i < index ; i++) {
+			String tmp = text.substring(0,7).replace('#', '1').replace('*', '0');
+			text = text.substring(7);
+			int num = Integer.parseInt(tmp, 2);
 
-		for (int i = 0 ; i < index ; i++) {
-			strs.add(answer.substring(0, 7));
-			answer = answer.substring(7, answer.length());
-		}
-
-		for (String str : strs) {
-			char[] c = new StringBuilder(str).reverse().toString().toCharArray();
-			int num = 0;
-			for (int i = 6 ; i >=0  ; i--) {
-				if (c[i] == '1')
-					num += Math.pow(2,i);
-			}
 			answer += (char)num;
 		}
 
-		return answer.toUpperCase();
+		return answer;
 	}
 
 	public static void main(String[] args) throws IOException {
