@@ -22,9 +22,8 @@ public class Main {
 
 		int num = scan.nextInt();
 		int[] arr = new int[num];
-		for (int i = 0 ; i < num ; i++) {
+		for (int i = 0 ; i < num ; i++)
 			arr[i] = scan.nextInt();
-		}
 
 		for (int k : main.solution(arr))
 			System.out.print(k + " ");
