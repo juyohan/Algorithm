@@ -5,6 +5,8 @@ public class Main {
 
 		for (int i = 1 ; i < arr.length ; i++) {
 			int target = arr[i];
+
+/*			내 방식
 			for (int j = i - 1 ; j >= 0 ; j--) {
 				if (target < arr[j]) {
 					arr[j+1] = arr[j];
@@ -13,6 +15,15 @@ public class Main {
 				else
 					break;
 			}
+*/
+
+			// 다른 방식
+			int j = i - 1;
+			while(j >= 0 && target < arr[j]) {
+				arr[j+1] = arr[j];
+				j--;
+			}
+			arr[j+1] = target;
 		}
 
 		return arr;
