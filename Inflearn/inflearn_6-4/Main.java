@@ -25,7 +25,7 @@ public class Main {
 		return answer;
 	}
 */
-/*
+
 	// 해설 방법
 	public int[] solution(int[] arr, int count, int num){
 		int[] answer = new int[num];
@@ -58,7 +58,7 @@ public class Main {
 
 		return answer;
 	}
-*/
+
 
 	public static void main(String[] argc) {
 		Main main = new Main();
