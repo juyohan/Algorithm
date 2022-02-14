@@ -1,16 +1,17 @@
-import java.io.*;
+import java.util.*;
 
 public class BJ_2562 {
-	public static void main(String argc[]) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		int min = 0;
-		int max = 100;
-		String[9] arr = br.readLine();
-		for (int i = 0 ; i < 10 ; i++) {
-			bw.write(arr[i]);
+	public static void main(String argc[]) {
+		Scanner scan = new Scanner(System.in);
+		Set<Integer> set = new LinkedHashSet<>();
+
+		for (int i = 0 ; i < 9 ; i++) {
+			set.add(scan.nextInt());
 		}
-		bw.flush();
-		bw.close();
+
+		Integer integer = set.stream().max(Comparator.comparing(x -> x)).get();
+		List<Integer> list = new ArrayList<>(set);
+		System.out.println(integer);
+		System.out.println(list.indexOf(integer) + 1);
 	}
 }
