@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class BJ_11725 {
     static List<Integer> list[];
@@ -26,24 +24,41 @@ public class BJ_11725 {
             list[num2].add(num1);
         }
 
-        for (int i = 1; i <= N; i++)
-            if (!isVisited[i])
-                dfs(i);
+//        for (int i = 1; i <= N; i++)
+//            if (!isVisited[i])
+//                dfs(i);
+        bfs();
 
         for (int i = 2 ; i <= N ; i++)
             System.out.println(parent[i]);
     }
 
-    public static void dfs(int i) {
-        if (isVisited[i])
-            return;
+//    public static void dfs(int i) {
+//        if (isVisited[i])
+//            return;
+//
+//        isVisited[i] = true;
+//
+//        for (int num : list[i])
+//            if (!isVisited[num]) {
+//                parent[num] = i;
+//                dfs(num);
+//            }
+//    }
 
-        isVisited[i] = true;
-
-        for (int num : list[i])
-            if (!isVisited[num]) {
-                parent[num] = i;
-                dfs(num);
+    public static void bfs() {
+        Queue<Integer> queue = new LinkedList<>();
+        queue.offer(1);
+        isVisited[1] = true;
+        while(!queue.isEmpty()) {
+            int num = queue.poll();
+            for (int i : list[num]) {
+                if (!isVisited[i]) {
+                    queue.offer(i);
+                    isVisited[i] = true;
+                    parent[i] = num;
+                }
             }
+        }
     }
 }
