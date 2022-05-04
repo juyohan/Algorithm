@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class Main {
+public class inf_3_01 {
 	public static void main(String[] argc) {
-		Main main = new Main();
+		inf_3_01 inf301 = new inf_3_01();
 		int first, second;
 		ArrayList<Integer> lists = new ArrayList<>();
 
