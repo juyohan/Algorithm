@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class inf_3_03 {
 	public int solution(int[] arr, int k) {
 		int answer = 0;
 //		여긴 내가 생각해서 푼 부분
@@ -28,7 +28,7 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
+		inf_3_03 inf303 = new inf_3_03();
 		Scanner scan = new Scanner(System.in);
 		int days = scan.nextInt();
 		int k = scan.nextInt();
@@ -38,7 +38,7 @@ public class Main {
 			arr[i] = scan.nextInt();
 		}
 
-		System.out.print(main.solution(arr, k));
+		System.out.print(inf303.solution(arr, k));
 
 	}
 }
