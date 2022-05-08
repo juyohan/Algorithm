@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class inf_3_02 {
 	public ArrayList<Integer> solution(int[] arr1, int[] arr2) {
 		ArrayList<Integer> list = new ArrayList<>();
 		Arrays.sort(arr1);
@@ -37,7 +37,7 @@ public class Main {
 	public static void main(String[] argc) {
 //		ArrayList<Integer> lists1 = new ArrayList<>();
 //		ArrayList<Integer> lists2 = new ArrayList<>();
-		Main main = new Main();
+		inf_3_02 inf302 = new inf_3_02();
 		Scanner scan = new Scanner(System.in);
 
 		int first = scan.nextInt();
@@ -56,7 +56,7 @@ public class Main {
 
 //		lists2.retainAll(lists1);
 //		Collections.sort(lists2);
-		for (int num : main.solution(arr1, arr2)) 
+		for (int num : inf302.solution(arr1, arr2))
 			System.out.print(num + " ");
 //		System.out.print(lists2);
 	}
