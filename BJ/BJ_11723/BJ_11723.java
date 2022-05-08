@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -51,4 +52,7 @@ public class BJ_11723 {
         }
         System.out.print(sb);
     }
+=======
+package PACKAGE_NAME;public class BJ_11723 {
+>>>>>>> origin/master
 }

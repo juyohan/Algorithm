@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -20,4 +21,7 @@ public class BJ_1094 {
         }
         System.out.println(cnt);
     }
+=======
+package PACKAGE_NAME;public class BJ_1094 {
+>>>>>>> origin/master
 }
