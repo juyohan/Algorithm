@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class inf_03_5 {
 	public int solution(int num) {
 		int answer = 0;
 
@@ -20,7 +20,7 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
+		inf_03_5 main = new inf_03_5();
 		Scanner scan = new Scanner(System.in);
 		int num = scan.nextInt();
 		System.out.print(main.solution(num));
