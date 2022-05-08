@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class inf_3_04 {
 	public int solution(int[] arr, int k) {
 		int answer = 0;
 		int sum = 0;
@@ -22,7 +22,7 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
+		inf_3_04 main = new inf_3_04();
 		Scanner scan = new Scanner(System.in);
 		int len = scan.nextInt();
 		int sum = scan.nextInt();
