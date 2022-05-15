@@ -1,28 +1,28 @@
 import java.util.*;
 
-class Person {
+class inf_05_8_Person {
 	int id;
 	int value;
 
-	public Person(int id, int value) {
+	public inf_05_8_Person(int id, int value) {
 		this.id = id;
 		this.value = value;
 	}
 }
 
-public class Main {
+public class inf_05_8 {
 	public Integer solution(int select, int[] status) {
 		int answer = 1;
-		Queue<Person> queue = new LinkedList<>();
+		Queue<inf_05_8_Person> queue = new LinkedList<>();
 
 		for (int i = 0 ; i < status.length ; i++)
-			queue.offer(new Person(i, status[i]));
+			queue.offer(new inf_05_8_Person(i, status[i]));
 
 		while (!queue.isEmpty()) {
 			// 비교할 대상을 꺼내옴
-			Person p = queue.poll();
+			inf_05_8_Person p = queue.poll();
 			// 큐에 들어있는 값들과 하나씩 비교함
-			for (Person x : queue) {
+			for (inf_05_8_Person x : queue) {
 				// 비교할 대상의 값보다 큐에 들어있는 값이 클 경우
 				if (p.value < x.value) {
 					// 비교할 대상을 다시 큐에 넣음
@@ -46,7 +46,7 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
+		inf_05_8 inf058 = new inf_05_8();
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
@@ -56,6 +56,6 @@ public class Main {
 		for (int i = 0 ; i < num ; i++)
 			status[i] = scan.nextInt();
 
-		System.out.println(main.solution(select, status));
+		System.out.println(inf058.solution(select, status));
 	}
 }
