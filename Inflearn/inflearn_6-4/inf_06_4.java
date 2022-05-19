@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class inf_06_4 {
 
 /* 	내가 푼 방법
 	public int[] solution(int[] arr, int count, int num){
@@ -61,7 +61,7 @@ public class Main {
 
 
 	public static void main(String[] argc) {
-		Main main = new Main();
+		inf_06_4 main = new inf_06_4();
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
