@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -50,4 +51,7 @@ public class inf_07_08 {
 
         return count;
     }
+=======
+package PACKAGE_NAME;public class inf_07_08 {
+>>>>>>> origin/master
 }
