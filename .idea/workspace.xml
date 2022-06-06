@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfa602ee-ea9b-42c5-973c-32a53ed88e38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/BJ_15552/BJ_15552.java" beforeDir="false" afterPath="$PROJECT_DIR$/BJ_15552/BJ_15552.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inflearn/inflearn_7-12/inf_07_12_Re.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inflearn/inflearn_7-12/inf_07_12_Re.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inflearn/inflearn_8-7/inf_08_07.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inflearn/inflearn_8-7/inf_08_07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inflearn/inflearn_8-7/inf_08_07_Re.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inflearn/inflearn_8-7/inf_08_07_Re.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inflearn/inflearn_8-8/inf_08_08.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inflearn/inflearn_8-8/inf_08_08.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,7 +42,56 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager" selected="Application.inf_07_12_Re">
+    <configuration name="inf_07_12_Re" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inf_07_12_Re" />
+      <module name="algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="inf_08_06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inf_08_06" />
+      <module name="algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="inf_08_07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inf_08_07" />
+      <module name="algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="inf_08_07_Re" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inf_08_07_Re" />
+      <module name="algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="inf_08_08" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inf_08_08" />
+      <module name="algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.inf_07_12_Re" />
+        <item itemvalue="Application.inf_08_08" />
+        <item itemvalue="Application.inf_08_07_Re" />
+        <item itemvalue="Application.inf_08_07" />
+        <item itemvalue="Application.inf_08_06" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
