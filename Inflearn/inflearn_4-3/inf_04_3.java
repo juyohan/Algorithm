@@ -1,7 +1,9 @@
+package PACKAGE_NAME;
+
 import java.util.*;
 
-public class Main {
-	public ArrayList<Integer> solution(int[] value, int days, int k) {
+public class inf_04_3 {
+	public static ArrayList<Integer> solution(int[] value, int days, int k) {
 		HashMap<Integer, Integer> map = new HashMap<>();
 		ArrayList<Integer> answer = new ArrayList<>();
 
@@ -26,7 +28,6 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		int days = scan.nextInt();
@@ -36,7 +37,7 @@ public class Main {
 		for (int i = 0 ; i < days ; i++) 
 			value[i] = scan.nextInt();
 
-		for (int num : main.solution(value, days, k))
+		for (int num : solution(value, days, k))
 			System.out.print(num + " ");
 	}
 }

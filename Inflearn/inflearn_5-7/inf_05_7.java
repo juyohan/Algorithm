@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Main {
-	public String solution(String p, String sub) {
+public class inf_05_7 {
+	public static String solution(String p, String sub) {
 		Queue<Character> queue = new LinkedList<>();
 
 		for (char c : p.toCharArray())
@@ -19,12 +19,11 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		String p = scan.next();
 		String sub = scan.next();
 
-		System.out.println(main.solution(p, sub));
+		System.out.println(solution(p, sub));
 	}
 }

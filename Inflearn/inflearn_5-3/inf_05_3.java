@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Main {
-	public Integer solution(int size, int[][] arr, int count, int[] countArr) {
+public class inf_05_3 {
+	public static Integer solution(int size, int[][] arr, int count, int[] countArr) {
 		Stack<Integer> stack = new Stack<>();
 		int answer = 0;
 
@@ -28,7 +28,6 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		int size = scan.nextInt();
@@ -45,6 +44,6 @@ public class Main {
 		for (int i = 0 ; i < count ; i++) 
 			countArr[i] = scan.nextInt();
 
-		System.out.print(main.solution(size, arr, count, countArr));
+		System.out.print(solution(size, arr, count, countArr));
 	}
 }

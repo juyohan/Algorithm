@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Main {
-	public int[] solution(int[] arr){
+public class inf_06_1 {
+	public static int[] solution(int[] arr){
 
 		for (int k = 0 ; k < arr.length ; k++) {
 			int min = k;
@@ -18,7 +18,6 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
@@ -27,7 +26,7 @@ public class Main {
 			arr[i] = scan.nextInt();
 		}
 
-		for (int k : main.solution(arr))
+		for (int k : solution(arr))
 			System.out.print(k + " ");
 	}
 }

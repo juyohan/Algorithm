@@ -1,7 +1,9 @@
+package PACKAGE_NAME;
+
 import java.util.*;
 
-public class Main {
-	public int solution(int[] arr, int card, int pick) {
+public class inf_04_5 {
+	public static int solution(int[] arr, int card, int pick) {
 		int answer = 0;
 		TreeSet<Integer> set = new TreeSet<>(Collections.reverseOrder());
 
@@ -21,7 +23,6 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		int card = scan.nextInt();
@@ -30,6 +31,6 @@ public class Main {
 		for (int i = 0 ; i < card ; i++) 
 			arr[i] = scan.nextInt();
 
-		System.out.print(main.solution(arr, card, pick));
+		System.out.print(solution(arr, card, pick));
 	}
 }

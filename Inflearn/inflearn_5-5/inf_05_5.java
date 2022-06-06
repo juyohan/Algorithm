@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Main {
-	public Integer solution(String str) {
+public class inf_05_5 {
+	public static Integer solution(String str) {
 		int answer = 0;
 		int count = 0;
 		Stack<Character> stack = new Stack<>();
@@ -35,11 +35,10 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		String str = scan.next();
 
-		System.out.println(main.solution(str));
+		System.out.println(solution(str));
 	}
 }

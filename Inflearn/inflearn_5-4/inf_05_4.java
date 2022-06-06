@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Main {
-	public Integer solution(String str) {
+public class inf_05_4 {
+	public static Integer solution(String str) {
 		Stack<Integer> stack = new Stack<>();
 		int answer = 0;
 
@@ -27,11 +27,10 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		String str = scan.next();
 
-		System.out.println(main.solution(str));
+		System.out.println(solution(str));
 	}
 }

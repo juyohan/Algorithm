@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Main {
-	public int solution(String str1, String str2) {
+public class inf_04_4 {
+	public static int solution(String str1, String str2) {
 		HashMap<Character, Integer> map1 = new HashMap<>();
 		char[] str  = str1.toCharArray();
 		HashMap<Character, Integer> map2 = new HashMap<>();
@@ -32,12 +32,11 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		String str1 = scan.next();
 		String str2 = scan.next();
 
-		System.out.print(main.solution(str1, str2));
+		System.out.print(solution(str1, str2));
 	}
 }

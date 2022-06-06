@@ -1,7 +1,9 @@
+package PACKAGE_NAME;
+
 import java.util.*;
 
-public class Main {
-	public char solution(String str, int students) {
+public class inf_04_1 {
+	public static char solution(String str, int students) {
 		char answer = ' ';
 
 		HashMap<Character, Integer> hashMap = new HashMap<>();
@@ -20,12 +22,11 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		int students = scan.nextInt();
 		String str = scan.next();
 
-		System.out.print(main.solution(str, students));
+		System.out.print(solution(str, students));
 	}
 }

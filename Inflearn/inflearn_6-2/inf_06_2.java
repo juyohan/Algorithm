@@ -1,7 +1,9 @@
+package PACKAGE_NAME;
+
 import java.util.*;
 
-public class Main {
-	public int[] solution(int[] arr){
+public class inf_06_2 {
+	public static int[] solution(int[] arr){
 
 		for (int i = 0 ; i < arr.length ; i++) {
 			for (int j = i + 1 ; j < arr.length ; j++) {
@@ -17,7 +19,6 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
@@ -25,7 +26,7 @@ public class Main {
 		for (int i = 0 ; i < num ; i++)
 			arr[i] = scan.nextInt();
 
-		for (int k : main.solution(arr))
+		for (int k : solution(arr))
 			System.out.print(k + " ");
 	}
 }

@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Main {
-	public Integer solution(int num, int k) {
+public class inf_05_6 {
+	public static Integer solution(int num, int k) {
 		int answer = 0;
 		Queue<Integer> queue = new LinkedList<>();			
 
@@ -21,12 +21,11 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
 		int k = scan.nextInt();
 
-		System.out.println(main.solution(num, k));
+		System.out.println(solution(num, k));
 	}
 }

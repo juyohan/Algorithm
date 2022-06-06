@@ -1,7 +1,9 @@
+package PACKAGE_NAME;
+
 import java.util.*;
 
-public class Main {
-	public List<Integer> solution(int num, int[] arr) {
+public class inf_06_6 {
+	public static List<Integer> solution(int num, int[] arr) {
 		List<Integer> answer = new ArrayList<>();
 		// Arrays.copyOf(복제할 배열, 복제할 크기);
 //		int[] tmp = Arrays.copyOf(arr, num);
@@ -20,7 +22,6 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
@@ -29,7 +30,7 @@ public class Main {
 		for (int i = 0 ; i < num ; i++)
 			arr[i] = scan.nextInt();
 
-		for (int result : main.solution(num, arr))
+		for (int result : solution(num, arr))
 			System.out.print(result + " ");
 	}
 }

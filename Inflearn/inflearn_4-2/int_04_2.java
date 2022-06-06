@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Main {
-	public String solution(String str1, String str2) {
+public class int_04_2 {
+	public static String solution(String str1, String str2) {
 		String answer = "";
 
 		HashMap<Character, Integer> map1 = new HashMap<>();
@@ -24,7 +24,6 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 		String str1 = scan.next();
@@ -33,6 +32,6 @@ public class Main {
 		String str2 = scan.next();
 		str2 = str2.toUpperCase();
 
-		System.out.print(main.solution(str1, str2));
+		System.out.print(solution(str1, str2));
 	}
 }

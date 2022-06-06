@@ -4,14 +4,12 @@ import java.lang.*;
 public class inf_2_12 {
 	public Integer solution(int[][] inputs, int counts, int award) {
 		int answer = 0;
-		int[] student = new int[counts]
+		int[] student = new int[counts];
 
 		for (int i = 0 ; i < counts ; i++) {
-			for (int j = 0 ; j < award; j++) {
-				 // 안에 있는 학생이 i 등
-				for (int k = 
-				
-					
+			for (int j = 0; j < award; j++) {
+				// 안에 있는 학생이
+			}
 		}
 
 		return answer;

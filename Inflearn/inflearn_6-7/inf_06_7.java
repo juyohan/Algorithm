@@ -1,3 +1,5 @@
+package PACKAGE_NAME;
+
 import java.util.*;
 
 /* Comparable을 사용
@@ -21,18 +23,18 @@ class Point implements Comparable<Point> {
 */
 
 // Comparator을 사용
-class Point {
+class Inf_06_7_Point {
 	public int x, y;
 
-	Point(int x, int y) {
+	Inf_06_7_Point(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
 }
 
-class MyComparator implements Comparator<Point> {
+class MyComparator implements Comparator<Inf_06_7_Point> {
 	@Override
-	public int compare(Point p1, Point p2) {
+	public int compare(Inf_06_7_Point p1, Inf_06_7_Point p2) {
 		if (p1.x == p2.x)
 			return Integer.compare(p1.y, p2.y);
 		else
@@ -41,8 +43,8 @@ class MyComparator implements Comparator<Point> {
 }
 
 
-public class Main {
-	public int[][] solution(int size, int[][] location) {
+public class inf_06_7 {
+	public static int[][] solution(int size, int[][] location) {
 
 		// Comparator 클래스를 사용해 compare의 메소드를 가지고 비교한다.
 		// 간략화 한 코드
@@ -68,7 +70,6 @@ public class Main {
 	}
 
 	public static void main(String[] argc) {
-		Main main = new Main();
 		Scanner scan = new Scanner(System.in);
 
 
@@ -88,16 +89,16 @@ public class Main {
 			System.out.println("");
 		}
 */
-		ArrayList<Point> point = new ArrayList<>();
+		ArrayList<Inf_06_7_Point> point = new ArrayList<>();
 		for (int i = 0 ; i < size ; i++) {
 			int x = scan.nextInt();
 			int y = scan.nextInt();
-			point.add(new Point(x, y));
+			point.add(new Inf_06_7_Point(x, y));
 		}
 		MyComparator com = new MyComparator();
 		Collections.sort(point, com);
 //		Collections.sort(point);
-		for (Point o : point)
+		for (Inf_06_7_Point o : point)
 			System.out.print(o.x + " " + o.y + "\n");
 	}
 }
