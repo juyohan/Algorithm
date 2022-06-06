@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class inf_08_01 {
+public class inf_08_01_Re {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
@@ -18,28 +18,27 @@ public class inf_08_01 {
     }
 
     static String answer = "NO";
-    static boolean flag = false;
 
     public static String solution(int N, int[] arr) {
         int sum = Arrays.stream(arr).sum();
 
-        if (sum % 2 != 0) return answer;
+        if (sum % 2 != 0)
+            return answer;
 
-        DFS(0, N, 0, sum, arr);
+        DFS(0, N, sum / 2, 0, arr);
 
         return answer;
     }
 
-    public static void DFS(int start, int N, int sum, int total, int[] arr) {
-        if (flag) return;
+    public static void DFS(int start, int N, int result, int sum2, int[] arr) {
         if (start == N) {
-            if (total / 2 - sum == 0) {
-                flag = true;
+            if (result - sum2 == 0)
                 answer = "YES";
-            }
+            return;
         } else {
-            DFS(start + 1, N, sum + arr[start], total, arr);
-            DFS(start + 1, N, sum, total, arr);
+            DFS(start + 1, N, result, sum2 + arr[start], arr);
+
+            DFS(start + 1, N, result, sum2, arr);
         }
     }
 }
