@@ -21,7 +21,7 @@ public class inf_08_04_Re {
     static int answerIndex = 0;
 
     public static int[][] solution(int N, int M) {
-        answer = new int[(int) Math.pow(N, N)][M];
+        answer = new int[(int) Math.pow(N, M)][M];
         int[] split = new int[M];
 
         DFS(0, M, N, split);
