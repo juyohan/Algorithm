@@ -34,5 +34,6 @@ replay_pid*
 /purple
 /out
 /Kakao
+.vscode/*
 
 # End of https://www.toptal.com/developers/gitignore/api/java
