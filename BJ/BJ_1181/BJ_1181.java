@@ -1,40 +1,46 @@
-﻿import java.io.BufferedReader;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class BJ_1181 {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int size = Integer.parseInt(br.readLine());
-        String[] arr = new String[size];
+        String[] strs = new String[size];
 
         for (int i = 0 ; i < size ; i++) {
-            arr[i] = br.readLine();
+            strs[i] = br.readLine();
         }
 
-        solution(arr);
+        for (String answer : solution(strs)) {
+            System.out.println(answer);
+        }
     }
 
-    protected static void solution(String[] arr) {
-        int[] ranking = new int[arr.length];
-        String[] answer = new String[arr.length];
-    
-        for (int i = 0 ; i < arr.length ; i++) {
-            ranking[i] = arr[i].length();
-        }
+    public static String[] solution(String[] strs) {
+        String[] result = Arrays.stream(strs).distinct().toArray(String[]::new); // 중복제거
 
-        for (int i = 1 ; i < ranking.length ; i++) {
-            if (ranking[i - 1] == ranking[i]) {
-                answer[ranking[i]] = arr[i - 1];
+        Arrays.sort(result, new Comparator<String>() { // 정렬
+            @Override
+            public int compare(String str1, String str2) {
+                if (str1.length() == str2.length()) {
+                    int strIndex = 0;
+                    while (true) {
+                        if (str1.charAt(strIndex) == str2.charAt(strIndex)) {
+                            strIndex++;
+                        } else {
+                            break;
+                        }
+                    }
+                    return str1.charAt(strIndex) - str2.charAt(strIndex);
+                } else {
+                    return str1.length() - str2.length();
+                }
+            }
+        });
 
-
-            } else 
-                answer[ranking[i - 1]] = arr[i - 1];
-        }
-
-        for(String rank : answer) {
-            System.out.println(rank);
-        }
+        return result;
     }
 }
