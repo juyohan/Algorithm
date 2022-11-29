@@ -1,4 +1,6 @@
-class Solution {
+package LeetCode;
+
+public class reverse_words_in_a_string {
     public String reverseWords(String s) {
         String answer = "";
         
